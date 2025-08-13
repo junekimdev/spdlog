@@ -97,7 +97,7 @@ private:
                 return ANDROID_LOG_WARN;
             case spdlog::level::err:
                 return ANDROID_LOG_ERROR;
-            case spdlog::level::critical:
+            case spdlog::level::fatal:
                 return ANDROID_LOG_FATAL;
             default:
                 return ANDROID_LOG_DEFAULT;

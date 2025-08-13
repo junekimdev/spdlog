@@ -34,7 +34,7 @@ TEST_CASE("stderr_mt", "[stderr]") {
     l->info("Test stderr_mt");
     l->warn("Test stderr_mt");
     l->error("Test stderr_mt");
-    l->critical("Test stderr_mt");
+    l->fatal("Test stderr_mt");
     spdlog::drop_all();
 }
 
@@ -68,7 +68,7 @@ TEST_CASE("stderr_color_mt", "[stderr]") {
     l->info("Test stderr_color_mt");
     l->warn("Test stderr_color_mt");
     l->error("Test stderr_color_mt");
-    l->critical("Test stderr_color_mt");
+    l->fatal("Test stderr_color_mt");
     spdlog::drop_all();
 }
 

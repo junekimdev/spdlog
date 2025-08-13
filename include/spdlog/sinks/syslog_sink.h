@@ -26,7 +26,7 @@ public:
                           /* spdlog::level::info       */ LOG_INFO,
                           /* spdlog::level::warn       */ LOG_WARNING,
                           /* spdlog::level::err        */ LOG_ERR,
-                          /* spdlog::level::critical   */ LOG_CRIT,
+                          /* spdlog::level::fatal   */ LOG_CRIT,
                           /* spdlog::level::off        */ LOG_INFO}},
           ident_{std::move(ident)} {
         // set ident to be program name if empty

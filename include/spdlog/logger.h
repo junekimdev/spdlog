@@ -151,8 +151,8 @@ public:
     }
 
     template <typename... Args>
-    void critical(format_string_t<Args...> fmt, Args &&...args) {
-        log(level::critical, fmt, std::forward<Args>(args)...);
+    void fatal(format_string_t<Args...> fmt, Args &&...args) {
+        log(level::fatal, fmt, std::forward<Args>(args)...);
     }
 
 #ifdef SPDLOG_WCHAR_TO_UTF8_SUPPORT
@@ -223,8 +223,8 @@ public:
     }
 
     template <typename... Args>
-    void critical(wformat_string_t<Args...> fmt, Args &&...args) {
-        log(level::critical, fmt, std::forward<Args>(args)...);
+    void fatal(wformat_string_t<Args...> fmt, Args &&...args) {
+        log(level::fatal, fmt, std::forward<Args>(args)...);
     }
 #endif
 
@@ -254,8 +254,8 @@ public:
     }
 
     template <typename T>
-    void critical(const T &msg) {
-        log(level::critical, msg);
+    void fatal(const T &msg) {
+        log(level::fatal, msg);
     }
 
     // return true logging is enabled for the given level.

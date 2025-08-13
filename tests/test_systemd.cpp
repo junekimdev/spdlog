@@ -10,5 +10,5 @@ TEST_CASE("systemd", "[all]") {
     SPDLOG_LOGGER_INFO((&logger), "test spdlog info");
     SPDLOG_LOGGER_WARN((&logger), "test spdlog warn");
     SPDLOG_LOGGER_ERROR((&logger), "test spdlog error");
-    SPDLOG_LOGGER_CRITICAL((&logger), "test spdlog critical");
+    SPDLOG_LOGGER_FATAL((&logger), "test spdlog fatal");
 }

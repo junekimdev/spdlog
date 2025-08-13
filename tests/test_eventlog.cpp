@@ -68,8 +68,8 @@ TEST_CASE("eventlog", "[eventlog]") {
                       "my warn message", EVENTLOG_WARNING_TYPE);
     test_single_print([&test_logger](std::string const &msg) { test_logger.error(msg); },
                       "my error message", EVENTLOG_ERROR_TYPE);
-    test_single_print([&test_logger](std::string const &msg) { test_logger.critical(msg); },
-                      "my critical message", EVENTLOG_ERROR_TYPE);
+    test_single_print([&test_logger](std::string const &msg) { test_logger.fatal(msg); },
+                      "my fatal message", EVENTLOG_ERROR_TYPE);
 }
 
 #endif  //_WIN32
